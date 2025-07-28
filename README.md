@@ -1,10 +1,14 @@
-# coupons_accepted
-In this first practical application assignment of the program, you will seek to answer the question, “Will a customer accept the coupon?” The goal of this project is to use what you know about visualizations and probability distributions to distinguish between customers who accepted a driving coupon versus those who did not. 
-Coupon Acceptance Analysis Report
+# Coupon Acceptance Analysis Report
 
-OverviewThis report explores customer behavior based on whether they accepted or declined coupons. The dataset includes a variety of demographic, behavioral, and contextual variables. Our objective is to highlight key differences between these two customer groups and visualize trends that can inform marketing strategies.
+Overview: 
+
+This report examines customer behavior based on their acceptance or decline of coupons. The dataset comprises various demographic, behavioral, and contextual variables.
 
 1. Dataset Summary
+
+Data set used:
+
+Jupiter Notebook link:
 
 Total records: 12,584
 
@@ -12,78 +16,74 @@ Target variable: y (1 = accepted, 0 = not accepted)
 
 Variables: Age, Gender, Income, Coupon Type, Time of Day, Weather, Companion, Destination, etc.
 
-2. Overall Acceptance Rates by Coupon Type
+2. Data Cleanup
 
-Coupon Type
+Cleaned up the Car Column since it was missing data.
+Filled in the missing information with the mode 
+Converted string columns to numerical data
+Converted all columns to lowercase for ease of use.
+   
 
-Acceptance Rate
+3. Overall Acceptance Rates by Coupon Type
 
-Carry out & Take away
+Coupon Type               Acceptance Rate
 
-73.3%
+Carry out & Take away   -   73.3%
 
-Restaurant(<20)
+Restaurant(<20)         -   70.7%
 
-70.7%
+Coffee House            -   49.9%
 
-Coffee House
+Restaurant(20-50)       -   44.2%
 
-49.9%
+Bar                     -   40.9%
 
-Restaurant(20-50)
 
-44.2%
+4. Demographic Insights
 
-Bar
-
-40.9%
-
-Insight: Low-cost and quick-service food coupons perform best.
-
-3. Demographic Insights
-
-Age: Younger groups (21–30) show higher acceptance. Customers aged 50+ accept coupons the least.
+Age: The younger age group, <30, has a higher acceptance rate.
 
 Gender: Slightly higher acceptance among females.
 
-Income: Mid- and lower-income groups ($25K–$62.5K) are most receptive to coupons.
+Income: The income range of low to medium, 25K-62.5K, has the highest acceptance rate.
 
-4. Contextual Influences
+5. Contextual Influences
 
-Time of Day: Afternoon and evening see the highest coupon acceptance.
+Time of Day: Afternoon and evening (i.e., 2 PM, 6 PM, and 10 PM) see the highest coupon acceptance.
 
-Weather: Sunny weather leads to higher acceptance; rainy and snowy conditions reduce it.
+Weather: Sunny weather leads to a higher acceptance rate compared to snow and rainy conditions
 
-Passenger Type: People with friends are most likely to accept coupons, while those alone are least likely.
+Passenger Type: People with friends have accepted coupons the most.
 
-5. Statistical Analysis
+6. Statistical Analysis
 
-Correlation Heatmap (Numeric): Weak correlations overall. Coupon distance negatively correlates with acceptance.
+Correlation Heatmap (Numeric): No significant correlation was found between numerical points.
+Coupon distance negatively correlates with acceptance.
+  
 
-Cramér’s V (Categorical vs y):* **
+7. Key Takeaways
 
-Strongest association: coupon type (0.26)
+Found the Carry out & Take Away, Restaurant (<20) has the highest acceptance rate. This reinforces the notion that low-cost and fast food coupons are most effective.
 
-Moderate: passanger, destination, time, expiration
+The younger age group <30 has a higher acceptance rate.
 
-Weak: gender, income, education
+Occupations of Students, the Unemployed, and computer and mathematical professionals have a high acceptance rate.
 
-6. Key Takeaways
+People with friends have accepted coupons the most.
 
-Quick, low-cost food offers perform best.
+Sunny weather leads to a higher acceptance rate compared to snow and rainy conditions
 
-Young, social customers are prime targets.
+The income range of low and medium  25𝐾− 62.5K, has the highest acceptance rate.
 
-Afternoon/evening is a strategic time window.
+Coupon distance negatively correlates with acceptance.
 
-Weather and companionship context affects responsiveness.
-
-Next Steps
+8. Next Steps
 
 Build a simple machine learning model to predict coupon acceptance.
 
 Test targeted strategies on specific demographics (e.g., young professionals).
 
-Repository InfoPublish your Jupyter Notebook, cleaned dataset (optional), and this report on GitHub with a README to showcase findings and visualizations.
+Author: Siddardha Maganti
 
-Author: [Your Name]Project: Customer Coupon Acceptance AnalysisTools: Python, Pandas, Seaborn, Matplotlib, Plotly
+Project: Customer Coupon Acceptance 
+Analysis Tools: Python, Pandas, Seaborn, Matplotlib, Plotly
