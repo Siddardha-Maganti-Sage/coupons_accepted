@@ -6,9 +6,9 @@ This report examines customer behavior based on their acceptance or decline of c
 
 1. Dataset Summary
 
-   Data set used:
+   Data set used: https://github.com/Siddardha-Maganti-Sage/coupons_accepted/blob/main/coupons_acceptance/data/coupons.csv
    
-   Jupiter Notebook link:
+   Jupiter Notebook link: https://github.com/Siddardha-Maganti-Sage/coupons_accepted/blob/main/coupons_acceptance/prompt_assignment.ipynb
    
    Total records: 12,584
    
